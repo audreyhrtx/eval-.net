@@ -1,0 +1,164 @@
+{
+  "Jobs": [
+    {
+      "Name": "Publier les images",
+      "Dependencies": ["Signer les images"]
+    },
+    {
+      "Name": "Compiler le frontend",
+      "Dependencies": ["Installer les dependances frontend", "Verifier les types"]
+    },
+    {
+      "Name": "Verifier les licences",
+      "Dependencies": []
+    },
+    {
+      "Name": "Tester les migrations",
+      "Dependencies": ["Compiler les migrations", "Preparer la base de test"]
+    },
+    {
+      "Name": "Notifier la livraison",
+      "Dependencies": ["Creer la version"]
+    },
+    {
+      "Name": "Installer les dependances frontend",
+      "Dependencies": ["Recuperer les sources", "Verifier la configuration"]
+    },
+    {
+      "Name": "Construire image backend",
+      "Dependencies": ["Tester le backend", "Tester les migrations", "Analyser la securite backend"]
+    },
+    {
+      "Name": "Verifier le formatage",
+      "Dependencies": ["Recuperer les sources"]
+    },
+    {
+      "Name": "Tester le parcours utilisateur",
+      "Dependencies": ["Deployer en recette"]
+    },
+    {
+      "Name": "Recuperer les sources",
+      "Dependencies": []
+    },
+    {
+      "Name": "Compiler les migrations",
+      "Dependencies": ["Restaurer les paquets backend", "Valider les schemas"]
+    },
+    {
+      "Name": "Signer les images",
+      "Dependencies": ["Scanner les images", "Verifier les licences"]
+    },
+    {
+      "Name": "Analyser la securite frontend",
+      "Dependencies": ["Installer les dependances frontend"]
+    },
+    {
+      "Name": "Preparer les outils",
+      "Dependencies": []
+    },
+    {
+      "Name": "Creer la version",
+      "Dependencies": ["Promouvoir en production", "Publier la documentation"]
+    },
+    {
+      "Name": "Tester le frontend",
+      "Dependencies": ["Compiler le frontend"]
+    },
+    {
+      "Name": "Restaurer les paquets backend",
+      "Dependencies": ["Recuperer les sources", "Preparer les outils"]
+    },
+    {
+      "Name": "Verifier la sante",
+      "Dependencies": ["Deployer en recette"]
+    },
+    {
+      "Name": "Compiler les contrats",
+      "Dependencies": ["Generer les clients", "Restaurer les paquets backend"]
+    },
+    {
+      "Name": "Verifier la configuration",
+      "Dependencies": []
+    },
+    {
+      "Name": "Scanner les images",
+      "Dependencies": ["Construire image backend", "Construire image frontend"]
+    },
+    {
+      "Name": "Generer la documentation",
+      "Dependencies": ["Compiler le backend", "Compiler les contrats", "Verifier le formatage"]
+    },
+    {
+      "Name": "Preparer la base de test",
+      "Dependencies": ["Verifier la configuration", "Preparer les outils"]
+    },
+    {
+      "Name": "Promouvoir en production",
+      "Dependencies": ["Valider la recette"]
+    },
+    {
+      "Name": "Verifier les types",
+      "Dependencies": ["Installer les dependances frontend", "Generer les clients"]
+    },
+    {
+      "Name": "Verifier les secrets",
+      "Dependencies": []
+    },
+    {
+      "Name": "Tester les contrats",
+      "Dependencies": ["Compiler les contrats", "Compiler le backend"]
+    },
+    {
+      "Name": "Deployer en recette",
+      "Dependencies": ["Publier les images", "Publier les artefacts", "Tester integration"]
+    },
+    {
+      "Name": "Valider les schemas",
+      "Dependencies": ["Recuperer les sources", "Preparer les outils"]
+    },
+    {
+      "Name": "Construire image frontend",
+      "Dependencies": ["Tester le frontend", "Analyser la securite frontend"]
+    },
+    {
+      "Name": "Tester le backend",
+      "Dependencies": ["Compiler le backend"]
+    },
+    {
+      "Name": "Publier la documentation",
+      "Dependencies": ["Generer la documentation"]
+    },
+    {
+      "Name": "Compiler le backend",
+      "Dependencies": ["Restaurer les paquets backend", "Verifier le formatage"]
+    },
+    {
+      "Name": "Verifier les ressources",
+      "Dependencies": []
+    },
+    {
+      "Name": "Valider la recette",
+      "Dependencies": ["Tester le parcours utilisateur", "Tester les performances", "Verifier la sante"]
+    },
+    {
+      "Name": "Generer les clients",
+      "Dependencies": ["Valider les schemas"]
+    },
+    {
+      "Name": "Publier les artefacts",
+      "Dependencies": ["Tester les contrats", "Tester les migrations", "Verifier les ressources", "Verifier les secrets"]
+    },
+    {
+      "Name": "Analyser la securite backend",
+      "Dependencies": ["Restaurer les paquets backend"]
+    },
+    {
+      "Name": "Tester les performances",
+      "Dependencies": ["Deployer en recette"]
+    },
+    {
+      "Name": "Tester integration",
+      "Dependencies": ["Tester le backend", "Tester le frontend", "Tester les contrats", "Tester les migrations"]
+    }
+  ]
+}
